@@ -1,9 +1,23 @@
 # ポートフォリオを作る
 
 ## 初期設定等
+参考:https://www.sukerou.com/2022/03/github-pages-react.html
 
 ### プロジェクト作成
+
 `npx create-react-app portfolio --template typescript`
+
+### gh-pages のインストール
+
+`npm install gh-pages --save-dev`
+
+#### デプロイ用コマンドを `./package.json` に記載
+```json
+"scripts": {
+  ...,
+  "deploy": "npm run build && gh-pages -d build"
+}
+```
 
 # Getting Started with Create React App
 
