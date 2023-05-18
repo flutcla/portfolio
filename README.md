@@ -1,5 +1,11 @@
 # ポートフォリオを作る
 
+https://flutcla.github.io/portfolio/
+
+デプロイ: `npm run deploy`
+
+---
+
 ## 初期設定等
 参考:https://www.sukerou.com/2022/03/github-pages-react.html
 
