@@ -1,3 +1,10 @@
+# ポートフォリオを作る
+
+## 初期設定等
+
+### プロジェクト作成
+`npx create-react-app portfolio --template typescript`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
