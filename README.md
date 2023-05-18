@@ -19,6 +19,19 @@
 }
 ```
 
+### cross-env のインストール
+`npm install cross-env --save-dev`
+
+#### 環境変数の設定を `./package.json` に記載
+```diff
+"scripts": {
+-  "build": "react-scripts build",
++  "build": "cross-env PUBLIC_URL=/<リポジトリ名> react-scripts build",
+},
+```
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
