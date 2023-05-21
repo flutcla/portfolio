@@ -10,7 +10,9 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({title}) => (
   <SHeaderContainer>
     <SIconLinks>
-      <SIcon><a href='https://github.com/flutcla'target='_blank' rel="noreferrer"><FaGithub size="2em"></FaGithub></a></SIcon>
+      <SIcon>
+        <SIconA href='https://github.com/flutcla' target='_blank' rel="noreferrer"><FaGithub size="2em"></FaGithub></SIconA>
+      </SIcon>
     </SIconLinks>
     <STitle>{title}</STitle>
     <SNav>
@@ -30,7 +32,8 @@ const SHeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   z-index: 1;
-  background-color: ${Color.header};
+  background-color: ${Color.headerBg};
+  font-family: 'Gruppo';
 `;
 
 const SIconLinks = styled.ul`
@@ -47,6 +50,21 @@ const SIcon = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const SIconA = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:link{
+    color: ${Color.headerText};
+  }
+  &:visited{
+    color: ${Color.headerText};
+  }
+  &:hover{
+    color: ${Color.aliceBlue}
+  }
 `;
 
 const STitle = styled.h1`
@@ -77,4 +95,17 @@ const SNavItemLink = styled.a`
   box-sizing: border-box;
   width: 100%;
   padding: 0 10px;
+  text-decoration:none;
+  font-weight: bold;
+  font-size: 120%;
+
+  &:link{
+    color: ${Color.headerText};
+  }
+  &:visited{
+    color: ${Color.headerText};
+  }
+  &:hover{
+    color: ${Color.aliceBlue}
+  }
 `;
