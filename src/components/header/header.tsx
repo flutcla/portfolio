@@ -14,9 +14,9 @@ export const Header: React.FC<HeaderProps> = ({title}) => (
     </SIconLinks>
     <STitle>{title}</STitle>
     <SNav>
-      <SNavItem><a href="/">Home</a></SNavItem>
-      <SNavItem><a href="/about">About</a></SNavItem>
-      <SNavItem><a href="/contact">Contact</a></SNavItem>
+      <SNavItem><SNavItemLink href="/">Home</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink href="/about">About</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink href="/contact">Contact</SNavItemLink></SNavItem>
     </SNav>
   </SHeaderContainer>
 );
@@ -60,12 +60,21 @@ const SNav = styled.nav`
   position: absolute;
   right:0;
   height: 44px;
+  margin: 0 10px 0 0;
 `;
 
 const SNavItem = styled.li`
   list-style: none;
-  margin: 0 20px 0 0;
   display: flex;
-  align-items: center;
+  height: 44px;
+`;
+
+const SNavItemLink = styled.a`
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
 `;
