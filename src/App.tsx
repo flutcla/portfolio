@@ -5,7 +5,7 @@ import {Header} from './components/header/header';
 function App() {
   return (
     <div className="App">
-      <Header title="Header" />
+      <Header title="FlutCla's Portfolio" />
       <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
