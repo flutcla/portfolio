@@ -36,6 +36,15 @@ https://flutcla.github.io/portfolio/
 },
 ```
 
+## フォントの選定
+参考: https://qiita.com/cokemaniaIIDX/items/21916f02d9fe1209f600
+
+- [Google fonts](https://fonts.google.com) からいい感じのやつを探す(今回は Noto Sans)
+- `@import` を生成する `@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');`
+- `./src/index.css` に `@import` を追記
+- `./src/index.css` の `font-family` の先頭に `'Noto Sans JP'` を追記
+
+
 ---
 
 # Getting Started with Create React App
