@@ -44,6 +44,9 @@ https://flutcla.github.io/portfolio/
 - `./src/index.css` に `@import` を追記
 - `./src/index.css` の `font-family` の先頭に `'Noto Sans JP'` を追記
 
+## react-router-dom v6
+参考: https://zenn.dev/longbridge/articles/65355d3fdb7939
+
 
 ---
 
