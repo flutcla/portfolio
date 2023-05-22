@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub } from 'react-icons/fa';
-import { Color } from "../color";
+import { Color } from "../Color";
 
 interface HeaderProps {
   title: String
