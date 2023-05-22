@@ -1,5 +1,14 @@
+import { HelmetProvider, Helmet } from "react-helmet-async";
+
 export const Home = () => {
   return (
-    <h1>Home</h1>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <title>Home | FlutCla's Portfolio</title>
+        </Helmet>
+      </HelmetProvider>
+      <h1>Home</h1>
+    </>
   );
 }
