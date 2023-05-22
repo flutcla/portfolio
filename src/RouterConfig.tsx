@@ -7,11 +7,12 @@ import { NotFound } from "./components/pages/NotFound";
 export const RouterConfig = () => {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Home />}></Route>
+        <Route path="/portfolio/about" element={<About />} />
+        <Route path="/portfolio/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
