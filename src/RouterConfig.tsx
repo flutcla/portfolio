@@ -7,7 +7,7 @@ import { NotFound } from "./components/pages/NotFound";
 export const RouterConfig = () => {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/portfolio" element={<Home />}></Route>
