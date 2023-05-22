@@ -14,7 +14,7 @@ export const Header: React.FC<HeaderProps> = ({title}) => (
         <SIconA href='https://github.com/flutcla' target='_blank' rel="noreferrer"><FaGithub size="2em"></FaGithub></SIconA>
       </SIcon>
     </SIconLinks>
-    <STitle>{title}</STitle>
+    <STitle><STitleLink href="/">{title}</STitleLink></STitle>
     <SNav>
       <SNavItem><SNavItemLink href="/">Home</SNavItemLink></SNavItem>
       <SNavItem><SNavItemLink href="/about">About</SNavItemLink></SNavItem>
@@ -73,6 +73,19 @@ const STitle = styled.h1`
   margin: auto;
 `;
 
+const STitleLink = styled.a`
+  text-decoration:none;
+  &:link{
+    color: ${Color.headerText};
+  }
+  &:visited{
+    color: ${Color.headerText};
+  }
+  &:hover{
+    color: ${Color.aliceBlue}
+  }
+`;
+
 const SNav = styled.nav`
   display: flex;
   position: absolute;
@@ -95,7 +108,7 @@ const SNavItemLink = styled.a`
   box-sizing: border-box;
   width: 100%;
   padding: 0 10px;
-  text-decoration:none;
+  text-decoration: none;
   font-weight: bold;
   font-size: 120%;
 
