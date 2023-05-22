@@ -7,7 +7,7 @@ interface HeaderProps {
   title: String
 }
 
-export const Header: React.FC<HeaderProps> = ({title}) => (
+export const Header = ({title} : HeaderProps) => (
   <SHeaderContainer>
     <SIconLinks>
       <SIcon>
