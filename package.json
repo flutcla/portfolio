@@ -28,7 +28,7 @@
     "postbuild": "cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "REACT_APP_BUILD_DATE=`TZ=JST-9 date +'%Y-%m-%d'` npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
