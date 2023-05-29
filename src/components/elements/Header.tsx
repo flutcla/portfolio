@@ -1,6 +1,5 @@
-import React from "react";
 import styled from "styled-components";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 import { Color } from "../Color";
 
 interface HeaderProps {
@@ -12,6 +11,9 @@ export const Header = ({title} : HeaderProps) => (
     <SIconLinks>
       <SIcon>
         <SIconA href='https://github.com/flutcla' target='_blank' rel="noreferrer"><FaGithub size="2em"></FaGithub></SIconA>
+      </SIcon>
+      <SIcon>
+        <SIconA href='https://twitter.com/flutcla' target='_blank' rel="noreferrer"><FaTwitter size="2em"></FaTwitter></SIconA>
       </SIcon>
     </SIconLinks>
     <STitle><STitleLink href="/portfolio">{title}</STitleLink></STitle>
