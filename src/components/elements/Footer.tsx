@@ -1,4 +1,5 @@
 import { styled } from "styled-components"
+import { Color } from "../Color";
 
 export const Footer = () => {
   return (
@@ -11,13 +12,12 @@ export const Footer = () => {
 const lastUpdated = process.env.REACT_APP_BUILD_DATE || "[ビルド時の最終更新日]"
 
 const SFooterContainer = styled.footer`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 10px;
+  background-color: ${Color.headerBg};
 `;
 
-const SFooterText = styled.div``;
+const SFooterText = styled.div`
+  padding: 2px
+`;
 
 const SFooterSpan = styled.span`
   margin: 0 10px;
