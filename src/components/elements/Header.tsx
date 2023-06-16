@@ -18,9 +18,9 @@ export const Header = ({title} : HeaderProps) => (
     </SIconLinks>
     <STitle><STitleLink href="/portfolio">{title}</STitleLink></STitle>
     <SNav>
-      <SNavItem><SNavItemLink href="/">Home</SNavItemLink></SNavItem>
-      <SNavItem><SNavItemLink href="/#/about">About</SNavItemLink></SNavItem>
-      <SNavItem><SNavItemLink href="/#/contact">Contact</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink href="/portfolio">Home</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink href="/portfolio/#/about">About</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink href="/portfolio/#/contact">Contact</SNavItemLink></SNavItem>
     </SNav>
   </SHeaderContainer>
 );

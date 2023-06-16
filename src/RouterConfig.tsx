@@ -8,12 +8,9 @@ export const RouterConfig = () => {
   return (
     <>
       {/* <HashRouter basename={process.env.PUBLIC_URL}> */}
-      <HashRouter basename="/">
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
-          {/* <Route path="/portfolio" element={<Home />}></Route>
-          <Route path="/portfolio/about" element={<About />} />
-          <Route path="/portfolio/contact" element={<Contact />} /> */}
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
