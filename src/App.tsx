@@ -7,7 +7,7 @@ import { HashRouter } from 'react-router-dom';
 function App() {
   return (
     <SApp>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename="">
         <Header title="FlutCla's Portfolio" />
         <Content>
           <RouterConfig />
