@@ -2,15 +2,18 @@ import { styled } from 'styled-components';
 import { Footer } from './components/elements/Footer';
 import { Header } from './components/elements/Header';
 import { RouterConfig } from './RouterConfig';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
     <SApp>
-      <Header title="FlutCla's Portfolio" />
-      <Content>
-        <RouterConfig />
-      </Content>
-      <Footer />
+      <HashRouter basename="">
+        <Header title="FlutCla's Portfolio" />
+        <Content>
+          <RouterConfig />
+        </Content>
+        <Footer />
+      </HashRouter>
     </SApp>
   );
 }
