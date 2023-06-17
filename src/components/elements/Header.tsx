@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaGithub, FaTwitter } from 'react-icons/fa';
 import { Color } from "../Color";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   title: String
@@ -16,11 +17,11 @@ export const Header = ({title} : HeaderProps) => (
         <SIconA href='https://twitter.com/flutcla' target='_blank' rel="noreferrer"><FaTwitter size="2em"></FaTwitter></SIconA>
       </SIcon>
     </SIconLinks>
-    <STitle><STitleLink href="/portfolio">{title}</STitleLink></STitle>
+    <STitle><STitleLink to="/">{title}</STitleLink></STitle>
     <SNav>
-      <SNavItem><SNavItemLink href="/portfolio">Home</SNavItemLink></SNavItem>
-      <SNavItem><SNavItemLink href="/portfolio/#/about">About</SNavItemLink></SNavItem>
-      <SNavItem><SNavItemLink href="/portfolio/#/contact">Contact</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink to="/">Home</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink to="/about">About</SNavItemLink></SNavItem>
+      <SNavItem><SNavItemLink to="/contact">Contact</SNavItemLink></SNavItem>
     </SNav>
   </SHeaderContainer>
 );
@@ -75,7 +76,7 @@ const STitle = styled.h1`
   margin: auto;
 `;
 
-const STitleLink = styled.a`
+const STitleLink = styled(Link)`
   text-decoration:none;
   &:link{
     color: ${Color.headerText};
@@ -102,7 +103,7 @@ const SNavItem = styled.li`
   height: 44px;
 `;
 
-const SNavItemLink = styled.a`
+const SNavItemLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
