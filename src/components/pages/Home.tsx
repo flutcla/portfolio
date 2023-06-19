@@ -1,6 +1,7 @@
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { styled } from "styled-components";
 import aboutBg from "../../random/haskell/MonadMaybe.png";
+import { Favorites } from "../../random/Favorites";
 
 export const Home = () => {
   return (
@@ -31,7 +32,7 @@ export const Home = () => {
         <SDivInner>
           <SH1>Like</SH1>
           <p>私が好きなものをランダムに4つ表示します。クリックすると詳細が見られます。</p>
-          <p>TODO: ここを実装する</p>
+          <Favorites count={4} />
         </SDivInner>
       </SDivLikeContainer>
     </>
